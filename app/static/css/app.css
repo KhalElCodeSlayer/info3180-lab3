@@ -2,6 +2,15 @@ body {
     padding-top: 5rem;
 }
 
-header{
-    background-color: black;
+h6{
+    display: flex;
+}
+
+.required{
+    color: red;
+}
+
+.btn{
+    background-color: rgb(3, 152, 252);
+    color: white;
 }

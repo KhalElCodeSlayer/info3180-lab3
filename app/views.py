@@ -14,7 +14,7 @@ This file creates your application.
     return render_template('contact.html')"""
 
 
-from crypt import methods
+# from crypt import methods
 from app import app
 from flask import render_template, request, redirect, url_for, flash
 from app import mail
@@ -38,7 +38,7 @@ def about():
     return render_template('about.html', name="Mary Jane")
 
 
-@app.route('/contact', methods=['POST'])
+@app.route('/contact', methods=['Get', 'POST'])
 def contact():
     form = ContactForm()
     if request.method == 'POST' and form.validate():
